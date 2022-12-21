@@ -1,0 +1,559 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Real Estate Website</title>
+
+     <!--font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header>
+
+    <a href="#" class="logo"><span>Home</span>Estate</a>
+
+    <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#featured">Featured</a>
+        <a href="#agents">Agents</a>
+        <a href="#contact">Contact</a>
+        <a href="loan.html">Loan-Predict</a>
+        <a href="chatBot.html">ChatBot</a>
+        <a href="Predict.html">Predict</a>
+
+
+    </nav>
+    
+
+    <div class="icons">
+        <div class="icons">
+            <div id="menu-bars" class="fas fa-bars"></div>
+            
+            <button onclick="document.getElementById('id01').style.display='block'">Login</button>
+    
+            <div id="id01" class="modal">
+  
+                <form class="modal-content animate" action="/action_page.php" method="post">
+                  <div class="imgcontainer">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                    <img src="images/l4.jpg" alt="Avatar" class="avatar">
+                  </div>
+              
+                  <div class="container">
+                    <label for="uname"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+              
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+                      
+                    <button type="submit">Login</button>
+                    <label>
+                      <input type="checkbox" checked="checked" name="remember"> Remember me
+                    </label>
+                  </div>
+              
+                  <div class="container" style="background-color:#f1f1f1">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                    <span class="psw">Forgot <a href="#">password?</a></span>
+                  </div>
+                </form>
+              </div>
+              
+              <script>
+              // Get the modal
+              var modal = document.getElementById('id01');
+              
+              // When the user clicks anywhere outside of the modal, close it
+              window.onclick = function(event) {
+                  if (event.target == modal) {
+                      modal.style.display = "none";
+                  }
+              }
+              </script>
+    
+    
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <form action="">
+
+        <h3>Check Your New Home</h3>
+
+        <div class="buttons-container">
+            <a href="#" class="btn">FOR RENT</a>
+            <a href="#" class="btn">FOR SELL</a>
+        </div>
+
+        <div class="inputBox">
+            <input type="search" name="" placeholder="Neighborhood" id="">
+            <input type="search" name="" placeholder="City" id="">
+            <select name="" id="">
+                <option value="" disabled hidden selected>Minimum price</option>
+                <option value="$5000">$5000</option>
+                <option value="$10000">$10000</option>
+                <option value="$15000">$15000</option>
+                <option value="$20000">$20000</option>
+                <option value="$25000">$25000</option>
+            </select>
+            <select name="" id="">
+                <option value="" disabled hidden selected>Maximum Price</option>
+                <option value="$30000">$30000</option>
+                <option value="$35000">$35000</option>
+                <option value="$40000">$40000</option>
+                <option value="$45000">$45000</option>
+                <option value="$50000">$50000</option>
+            </select>
+            <select name="" id="">
+                <option value="" disabled hidden selected>Property Status</option>
+                <option value="Ready To Move">Ready To Move</option>
+                <option value="under construction">Under Construction</option>
+                <option value="furnished">Furnished</option>
+                <option value="semi-furnished">Semi-urnished</option>
+                <option value="unfurnished">Unfurnished</option>
+            </select>
+            <select name="" id="">
+                <option value="" disabled hidden selected>Property Type</option>
+                <option value="flat">Apartments</option>
+                <option value="house">House</option>
+                <option value="shop">Shop</option>
+                <option value="warehouse">Warehouse</option>
+                <option value="land">Land</option>
+            </select>
+            <select name="" id="">
+                <option value="" disabled hidden selected>BHK</option>
+                <option value="1 BHK">1 BHK</option>
+                <option value="2 BHK">2 BHK</option>
+                <option value="3 BHK">3 BHK</option>
+                <option value="4 BHK">4 BHK</option>
+                <option value="5 BHK">5 BHK</option>
+            </select>
+            <select name="" id="">
+                <option value="" disabled hidden selected>Aminities</option>
+                <option value="parking space">parking space</option>
+                <option value="swimming pool">swimming pool</option>
+                <option value="playground">playground</option>
+                <option value="security">security</option>
+                <option value="all">all</option>
+            </select>
+            <select name="" id="">
+                <option value="" disabled hidden selected>Bedrooms</option>
+                <option value="1 bedroom">1 bedroom</option>
+                <option value="2 bedroom">2 bedroom</option>
+                <option value="3 bedroom">3 bedroom</option>
+                <option value="4 bedroom">4 bedroom</option>
+                <option value="5 bedroom">5 bedroom</option>
+            </select>
+            <select name="" id="">
+                <option value="" disabled hidden selected>Bathrooms</option>
+                <option value="1 bathroom">1 bathroom</option>
+                <option value="2 bathroom">2 bathroom</option>
+                <option value="3 bathroom">3 bedroom</option>
+                <option value="4 bathroom">4 bathroom</option>
+                <option value="5 bathroom">5 bathroom</option>
+            </select>
+        </div>
+
+        <input type="submit" value="search property" class="btn">
+
+    </form>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- services section starts  -->
+
+<section class="services" id="services">
+
+    <h1 class="heading"> Our <span>Services</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="images/s-1.png" alt="">
+            <h3>Buying Home</h3>
+            <p>You can find your dream home here. You can also predict the price of house near to your area.</p>
+            <a href="#" class="btn">learn more</a>
+        </div>
+
+        <div class="box">
+            <img src="images/s-2.png" alt="">
+            <h3>Renting Home</h3>
+            <p>You can find your reantal home with your desire aminities.</p>
+            <a href="#" class="btn">learn more</a>
+        </div>
+
+        <div class="box">
+            <img src="images/s-3.png" alt="">
+            <h3>selling home</h3>
+            <p>You can sell your property here and can get good deal.</p>
+            <a href="#" class="btn">learn more</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- services section ends -->
+
+<!-- featured section starts  -->
+
+<section class="featured" id="featured">
+
+    <h1 class="heading"> <span>featured</span> properties </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <div class="image-container">
+                <img src="images/f1.jpg" alt="">
+              
+            </div>
+            <div class="content">
+                <div class="price">
+                    <h3>$499900</h3>
+                    
+                    
+                </div>
+                <div class="location">
+                    <h3>modern house</h3>
+                    <p>358 N St SW, Washington Navy Yard, DC 20374</p>
+                </div>
+                <div class="details">
+                    <h3> <i class="fas fa-expand"></i> 3500 sqft </h3>
+                    <h3> <i class="fas fa-bed"></i> 2 beds </h3>
+                    <h3> <i class="fas fa-bath"></i> 2 baths </h3>
+                </div>
+                <div class="buttons">
+                    <a href="#" class="btn">request info</a>
+                    <a href="#" class="btn">view details</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image-container">
+                <img src="images/f2.jpg" alt="">
+               
+            </div>
+            <div class="content">
+                <div class="price">
+                    <h3>$257444</h3>
+                    
+                    
+                </div>
+                <div class="location">
+                    <h3>modern house</h3>
+                    <p>300 8th St NE UNIT 205, Washington, DC 20002</p>
+                </div>
+                <div class="details">
+                    <h3> <i class="fas fa-expand"></i> 3500 sqft </h3>
+                    <h3> <i class="fas fa-bed"></i> 2 beds </h3>
+                    <h3> <i class="fas fa-bath"></i> 1 baths </h3>
+                </div>
+                <div class="buttons">
+                    <a href="#" class="btn">request info</a>
+                    <a href="#" class="btn">view details</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image-container">
+                <img src="images/f3.jpg" alt="">
+               
+                
+            </div>
+            <div class="content">
+                <div class="price">
+                    <h3>$1068000</h3>
+                    
+                </div>
+                <div class="location">
+                    <h3>Classic House</h3>
+                    <p> 358 N St SW, Washington Navy Yard, DC 20374</p>
+                </div>
+                <div class="details">
+                    <h3> <i class="fas fa-expand"></i> 2347 sqft </h3>
+                    <h3> <i class="fas fa-bed"></i> 3 beds </h3>
+                    <h3> <i class="fas fa-bath"></i> 4 baths </h3>
+                </div>
+                <div class="buttons">
+                    <a href="#" class="btn">request info</a>
+                    <a href="#" class="btn">view details</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image-container">
+                <img src="images/f4.jpg" alt="">
+                
+            </div>
+            <div class="content">
+                <div class="price">
+                    <h3>$159000</h3>
+                    
+                </div>
+                <div class="location">
+                    <h3>modern house</h3>
+                    <p>1311 Delaware Ave SW #137, Washington, DC 20024</p>
+                </div>
+                <div class="details">
+                    <h3> <i class="fas fa-expand"></i> 3500 sqft </h3>
+                    <h3> <i class="fas fa-bed"></i> 2 beds </h3>
+                    <h3> <i class="fas fa-bath"></i> 2 baths </h3>
+                </div>
+                <div class="buttons">
+                    <a href="#" class="btn">request info</a>
+                    <a href="#" class="btn">view details</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image-container">
+                <img src="images/f5.jpg" alt="">
+                
+            </div>
+            <div class="content">
+                <div class="price">
+                    <h3>$650000</h3>
+                    
+                </div>
+                <div class="location">
+                    <h3>19's House</h3>
+                    <p>
+                        501-1 Longfellow St NW, Washington, DC 20011</p>
+                </div>
+                <div class="details">
+                    <h3> <i class="fas fa-expand"></i> 4000 sqft </h3>
+                    <h3> <i class="fas fa-bed"></i> 4 beds </h3>
+                    <h3> <i class="fas fa-bath"></i> 4 baths </h3>
+                </div>
+                <div class="buttons">
+                    <a href="#" class="btn">request info</a>
+                    <a href="#" class="btn">view details</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image-container">
+                <img src="images/f6.jpg" alt="">
+                
+            </div>
+            <div class="content">
+                <div class="price">
+                    <h3>$325000</h3>
+                    
+                </div>
+                <div class="location">
+                    <h3>Classic house</h3>
+                    <p>1669 Columbia Rd NW #113, Washington, DC 20009</p>
+                </div>
+                <div class="details">
+                    <h3> <i class="fas fa-expand"></i> 27500 sqft </h3>
+                    <h3> <i class="fas fa-bed"></i> 2 beds </h3>
+                    <h3> <i class="fas fa-bath"></i> 2 baths </h3>
+                </div>
+                <div class="buttons">
+                    <a href="#" class="btn">request info</a>
+                    <a href="#" class="btn">view details</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+</section>
+
+<!-- featured section ends -->
+
+<!-- agents section starts  -->
+
+<section class="agents" id="agents">
+
+    <h1 class="heading"> professional <span>agents</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            
+            <img src="images/p1.png" alt="">
+            <h3>Jessica</h3>
+            <span>agent</span>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            
+            <img src="images/p2.png" alt="">
+            <h3>john</h3>
+            <span>agent</span>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            
+            <img src="images/p3.png" alt="">
+            <h3>Falicia</h3>
+            <span>agent</span>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            
+            <img src="images/p4.png" alt="">
+            <h3>Mark</h3>
+            <span>agent</span>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- agents section ends -->
+
+<!-- contact section starts  -->
+
+<section class="contact" id="contact">
+
+<h1 class="heading"> <span>contact</span> us </h1>
+
+<div class="icons-container">
+
+    <div class="icons">
+        <img src="images/icon-1.png" alt="">
+        <h3>phone number</h3>
+        <p>+551-247-4453</p>
+        <p>+571-532-8858</p>
+    </div>
+
+    <div class="icons">
+        <img src="images/icon-2.png" alt="">
+        <h3>email address</h3>
+        <p>Shaifali@HomeEstate.com</p>
+        <p>Prasanthi@HomeEstate.com</p>
+    </div>
+
+     <div class="icons">
+        <img src="images/icon-3.png" alt="">
+        <h3>office address</h3>
+        <p>4400 Massachusetts Ave NW, Washington, DC 20016</p>
+    </div>
+
+</div>
+
+<div class="row">
+
+    <form action="">
+        <div class="inputBox">
+            <input type="text" placeholder="Name">
+            <input type="number" placeholder="Number">
+        </div>
+        <div class="inputBox">
+            <input type="email" placeholder="Email">
+            <input type="text" placeholder="Subject">
+        </div>
+        <textarea name="" placeholder="Message" id="" cols="30" rows="10"></textarea>
+        <input type="submit" value="send message" class="btn">
+    </form>
+
+    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d99370.29950629387!2d-77.01457599999999!3d38.8937545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c6de5af6e45b%3A0xc2524522d4885d2a!2sWashington%2C%20DC!5e0!3m2!1sen!2sus!4v1670716831065!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+
+</div>
+
+</section>-->
+
+ <!--contact section ends -->
+
+<!-- footer section starts-->
+
+<section class="footer">
+
+    <div class="footer-container">
+
+        <div class="credit">THANK YOU <span>  </span> </div>
+
+    </div>
+
+</section>
+
+ <!--footer section ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- javascript part --> 
+<script>
+
+let menu = document.querySelector('#menu-bars');
+let navbar = document.querySelector('.navbar');
+
+menu.onclick = () =>{
+    navbar.classList.toggle('active');
+    menu.classList.toggle('fa-times');
+}
+
+window.onscroll = () =>{
+    navbar.classList.remove('active');
+    menu.classList.remove('fa-times');
+}
+
+</script>
+
+</body>
+</html>-->
